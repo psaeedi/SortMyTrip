@@ -5,7 +5,7 @@
     <string name="action_sort">Sort Trip</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_main">Unsorted boarding cards</string>
-    <string name="title_activity_sorting">SortingActivity</string>
-    <string name="title_activity_sorted_trip">SortedTripActivity</string>
+    <string name="title_activity_sorting">Sorting...</string>
+    <string name="title_activity_sorted_trip">Sorted Trip</string>
 
 </resources>

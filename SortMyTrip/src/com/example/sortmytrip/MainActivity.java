@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
 			finish();
 		}
 		
-		ListView list = (ListView) findViewById(R.id.listView_unsorted);
+		ListView list = (ListView) findViewById(R.id.list_view_unsorted);
 		list.setAdapter(new BoardingCardAdapter(this, boardingCards));
 	}
 

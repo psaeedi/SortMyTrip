@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -23,7 +24,8 @@ public class SortedTripActivity extends Activity {
 		// Show the Up button in the action bar.
 		setupActionBar();
 		boardingCards = (List<BoardingCard>) getIntent().getSerializableExtra(MainActivity.BOARDINGCARDS);
-		
+		ListView list = (ListView) findViewById(R.id.list_view_sorted);
+		list.setAdapter(new BoardingCardAdapter(this, boardingCards));
 	}
 
 	/**

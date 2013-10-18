@@ -55,7 +55,7 @@ public class SortingActivity extends Activity {
 						sorter = null;
 					}
 			};
-
+          sorter.execute(boardingCards);
 		}
 				
 		ProgressDialog.show(this, "Sorting ...", "Please wait!");
