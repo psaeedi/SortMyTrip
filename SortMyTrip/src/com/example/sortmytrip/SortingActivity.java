@@ -29,12 +29,21 @@ public class SortingActivity extends Activity {
 		setContentView(R.layout.activity_sorting);
 		// Show the Up button in the action bar.
 		setupActionBar();
+		
+		
+		
 		if (sorter == null) {
 			boardingCards = (List<BoardingCard>) getIntent().getSerializableExtra(MainActivity.BOARDINGCARDS);
 			sorter = new AsyncTask<List<BoardingCard>, Void, List<BoardingCard>>() {@Override
 				
 				protected List<BoardingCard> doInBackground(
 						List<BoardingCard>... params) {
+				try {
+					// just to show the loading spinner!
+					Thread.sleep(1*1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 					SortingStrategy strategy = new SortingStrategy();
 					return strategy.sort(params[0]);
 				}
@@ -50,7 +59,7 @@ public class SortingActivity extends Activity {
 						// TODO Auto-generated method stub
 						super.onPostExecute(result);
 						Intent intent = new Intent(SortingActivity.this, SortedTripActivity.class);
-		                intent.putExtra(MainActivity.BOARDINGCARDS, (Serializable)boardingCards);
+		                intent.putExtra(MainActivity.BOARDINGCARDS, (Serializable)result);
 		                startActivity(intent);
 						sorter = null;
 					}

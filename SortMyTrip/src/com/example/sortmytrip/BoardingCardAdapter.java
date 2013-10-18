@@ -85,11 +85,16 @@ public class BoardingCardAdapter extends BaseAdapter {
 					.findViewById(R.id.transport);
 			transport.setText(item.getTransport());
 			TextView toFrom = (TextView) rowView.findViewById(R.id.to_from);
-			toFrom.setText(item.getTo() + " > " + item.getFrom());
+			toFrom.setText(item.getFrom() + " > " + item.getTo());
 			TextView seat = (TextView) rowView.findViewById(R.id.seat_info);
-			seat.setText("Seat:" + item.getSeatNum());
+			seat.setText("Seat: " + item.getSeatNum());
 			TextView extra = (TextView) rowView.findViewById(R.id.extra_info);
-			extra.setText(Arrays.toString(item.getExtra()));
+			StringBuilder builder = new StringBuilder();
+			for (String s : item.getExtra()) {
+				builder.append(s + "\n");
+			}
+
+			extra.setText(builder.toString());
 
 		} catch (RuntimeException ex) {
 			Log.e("CocktailListAdapter", item + " " + ex.getMessage(), ex);
