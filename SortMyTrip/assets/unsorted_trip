@@ -1,0 +1,34 @@
+[
+    {
+        "from": "London",
+        "to": "New York JFK",
+        "transport": "Flight SK22",
+        "seatNum": "7B",
+        "extra": ["Gate 22", "Baggage will be automatically transfered from your last leg."]
+    }
+    
+    {
+        "from": "Barcelona",
+        "to": "Gerona Airport",
+        "transport": "Airport Bus",
+        "seatNum": "No seat",
+        "extra": []
+    }
+
+    {
+        "from": "Madrid",
+        "to": "Barcelona",
+        "transport": "Train 78A",
+        "seatNum": "45B",
+        "extra": []
+    }
+    
+    {
+        "from": "Gerona Airport",
+        "to": "London",
+        "transport": "Flight SK455",
+        "seatNum": "3A",
+        "extra": ["Gate 45B", "Baggage Drop at ticket counter 344"]
+    }
+    
+   ]
