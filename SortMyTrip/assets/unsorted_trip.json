@@ -5,7 +5,7 @@
         "transport": "Flight SK22",
         "seatNum": "7B",
         "extra": ["Gate 22", "Baggage will be automatically transfered from your last leg."]
-    }
+    },
     
     {
         "from": "Barcelona",
@@ -13,7 +13,7 @@
         "transport": "Airport Bus",
         "seatNum": "No seat",
         "extra": []
-    }
+    },
 
     {
         "from": "Madrid",
@@ -21,7 +21,7 @@
         "transport": "Train 78A",
         "seatNum": "45B",
         "extra": []
-    }
+    },
     
     {
         "from": "Gerona Airport",
